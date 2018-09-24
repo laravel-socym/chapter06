@@ -51,13 +51,7 @@ $ docker-compose exec php-fpm php artisan migrate
 $ docker-compose exec php-fpm php artisan db:seed
 ```
 
-### remove
-
-```bash
-$ docker-compose down
-```
-
-### rebuild 
+#### コンテナのキャッシュが残っている場合
 
 ```bash
 $ docker-compose build --no-cache
@@ -84,3 +78,6 @@ mysql> SELECT * FROM user_tokens WHERE user_id = 1;
 
 ## ユーザーアカウント
 
+| メールアドレス | パスワード |
+|-----------------|-------------|
+| mail@example.com | password |
