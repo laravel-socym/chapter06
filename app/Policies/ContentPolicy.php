@@ -8,6 +8,7 @@ use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Contracts\Auth\Authenticatable;
 
 use function intval;
+use function property_exists;
 
 class ContentPolicy
 {

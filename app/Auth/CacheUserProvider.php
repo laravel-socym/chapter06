@@ -7,6 +7,10 @@ use Illuminate\Auth\EloquentUserProvider;
 use Illuminate\Contracts\Hashing\Hasher as HasherContract;
 use Illuminate\Contracts\Cache\Repository as CacheRepository;
 
+use function sprintf;
+use function is_null;
+use function hash_equals;
+
 class CacheUserProvider extends EloquentUserProvider
 {
     /** @var CacheRepository */

@@ -8,6 +8,9 @@ use Illuminate\Support\Str;
 use InvalidArgumentException;
 use Illuminate\Auth\Passwords\PasswordBrokerManager;
 
+use function base64_decode;
+use function substr;
+
 class PasswordManager extends PasswordBrokerManager
 {
 // 省略

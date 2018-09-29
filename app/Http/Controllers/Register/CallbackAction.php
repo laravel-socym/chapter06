@@ -14,6 +14,8 @@ use Laravel\Socialite\Contracts\Factory;
 use Laravel\Socialite\Two\GithubProvider;
 use Psr\Log\LoggerInterface;
 
+use function redirect;
+
 final class CallbackAction extends Controller
 {
     public function __invoke(
